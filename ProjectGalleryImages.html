@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>Image gallery</title>
+<meta charset="utf-8"/>
+<meta name = "viewport" content = "width=device-width, initial-scale-1">
+<style>
+	body{
+	   background : #222;
+	   margin-top : 20px;
+	   font-family : lora;
+	   color : white;
+	   }
+	   
+   .thumbnails img{
+	  height : 80px;
+	  border : 4px solid #555;
+	  padding : 1px;
+	  margin : 0 10px 10px 0;
+	  
+	 }
+		 
+	 .thumbnails img:hover{
+		border : 4px solid #55ffff;
+		}
+			
+	.preview img{
+	 border : 4px solid #444;
+	 padding : 1px;
+	 width : 800px;
+	 height : 400px;
+	}
+</style>
+</head>
+<body>
+	<div id="container" align="center">
+	<h1>My web Gallery</h1>
+	<br>
+	
+
+<div class="thumbnails">
+	<img onmouseover="preview.src=car.src" name="car" src="images/car.jpg">
+	<img onmouseover ="preview.src=house.src" name="house" src="images/house.jfif">
+	<img onmouseover="preview.src=gym.src" name="gym" src="images/gym.jpg">
+	<img  onmouseover ="preview.src=briyani.src" name="briyani" src="images/briyani.jfif">
+	<img onmouseover="preview.src=restro.src" name="restro" src="images/restro.jfif">
+	
+</div>
+<br>
+
+
+<div class="preview" align="center">
+	
+	<img name="preview" src="images/car.jpg">
+</div>
+</div>
+</body>
+</html>
